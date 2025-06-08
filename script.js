@@ -91,25 +91,20 @@ fetch('data/herdata.json')
         const row = document.getElementById('product-row');
 
         data.forEach(item => {
-            // Create col div   
             const colDiv = document.createElement('div');
             colDiv.className = 'col-4 col-md-3 mb-3';
 
-            // Create wrapper div
             const wrapperDiv = document.createElement('div');
             wrapperDiv.className = 'wrapper_her';
 
-            // Create anchor tag
             const anchor = document.createElement('a');
             anchor.href = '#';
 
-            // Create img tag
             const img = document.createElement('img');
             img.src = item.imgSrc;
             img.alt = item.alt;
             img.className = 'img-fluid';
 
-            // Append img to anchor, anchor to wrapper, wrapper to col, col to row
             anchor.appendChild(img);
             wrapperDiv.appendChild(anchor);
             colDiv.appendChild(wrapperDiv);
@@ -126,25 +121,20 @@ fetch('data/himdata.json')
         const row = document.getElementById('product-row1');
 
         data.forEach(item => {
-            // Create col div   
             const colDiv = document.createElement('div');
             colDiv.className = 'col-4 col-md-3 mb-3';
 
-            // Create wrapper div
             const wrapperDiv = document.createElement('div');
             wrapperDiv.className = 'wrapper_him';
 
-            // Create anchor tag
             const anchor = document.createElement('a');
             anchor.href = '#';
 
-            // Create img tag
             const img = document.createElement('img');
             img.src = item.imgSrc;
             img.alt = item.alt;
             img.className = 'img-fluid';
 
-            // Append img to anchor, anchor to wrapper, wrapper to col, col to row
             anchor.appendChild(img);
             wrapperDiv.appendChild(anchor);
             colDiv.appendChild(wrapperDiv);
@@ -161,25 +151,20 @@ fetch('data/kidsdata.json')
         const row = document.getElementById('product-row2');
 
         data.forEach(item => {
-            // Create col div   
             const colDiv = document.createElement('div');
             colDiv.className = 'col-4 col-md-3 mb-3';
 
-            // Create wrapper div
             const wrapperDiv = document.createElement('div');
             wrapperDiv.className = 'wrapper_him';
 
-            // Create anchor tag
             const anchor = document.createElement('a');
             anchor.href = '#';
 
-            // Create img tag
             const img = document.createElement('img');
             img.src = item.imgSrc;
             img.alt = item.alt;
             img.className = 'img-fluid';
 
-            // Append img to anchor, anchor to wrapper, wrapper to col, col to row
             anchor.appendChild(img);
             wrapperDiv.appendChild(anchor);
             colDiv.appendChild(wrapperDiv);
