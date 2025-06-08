@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+    <title> v2kart </title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- nav section starts here -->
+    <header>
+        <div class="container-fluid d-none d-md-block">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <a href="#">
+                        <img src="assets/img/logo.jpg" class="img-fluid" alt="logo" height="40" width="40">
+                    </a>
+                    <nav class="navbar">
+                        <ul id="main-menu-desktop" class="menu-list"></ul>
+                    </nav>
+                </div>
+
+                <div class="wrapper_login">
+                    <ul class="wrapper_side-menu mb-0">
+                        <li>
+                            <div class="search">
+                                <p class="mb-0"><i class="fa-solid fa-magnifying-glass"></i></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="user">
+                                <p class="mb-0"><i class="fa-regular fa-user"></i> Login</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="heart">
+                                <p class="mb-0 position-relative counter">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span> 0 </span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart">
+                                <p class="mb-0 position-relative counter">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span> 0 </span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid py-2 d-block d-md-none">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/img/logo.jpg" class="img-fluid" alt="logo" height="30" width="30">
+                    </a>
+                </div>
+
+                <div class="toggler">
+                    <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> <i
+                            class="fa-solid fa-bars"></i> </button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                                <a href="#">
+                                    <img src="assets/img/logo.jpg" class="img-fluid" alt="logo" height="30" width="30">
+                                </a>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+
+                            <nav class="navbar">
+                                <ul id="main-menu-mobile" class="menu-list"></ul>
+                            </nav>
+
+
+                            <div class="wrapper_login mt-4">
+                                <ul class="wrapper_side-menu mb-0">
+                                    <li>
+                                        <div class="search">
+                                            <p class="mb-0"><i class="fa-solid fa-magnifying-glass"></i></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="user">
+                                            <p class="mb-0"><i class="fa-regular fa-user"></i> Login</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="heart">
+                                            <p class="mb-0 position-relative counter">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span> 0 </span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cart">
+                                            <p class="mb-0 position-relative counter">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                <span> 0 </span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- nav section ends here -->
+
+
+    <!-- marquee starts here -->
+    <marquee class="bg-dark" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+        <span style="font-size: 12px;color:#fff;font-weight: 600; margin-right: 100px;">Beware of fake offer and
+            fraudulent callers </span>
+        <span style="font-size: 12px;color:#fff;font-weight: 600;"> GET 5% OFF ON ALL PREPAID ORDERS </span>
+    </marquee>
+    <!-- marquee ends here -->
+
+
+    <!-- carousel banner starts here -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/banner/banner1.jpg" class="d-block w-100" alt="offer banner">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/banner/banner2.jpg" class="d-block w-100" alt="offer banner">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/banner/banner3.jpg" class="d-block w-100" alt="offer banner">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/banner/banner4.jpg" class="d-block w-100" alt="offer banner">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousel banner ends here -->
+
+
+    <!-- top-pick section starts here -->
+    <section>
+        <div class="container my-5">
+            <div class="wrapper_top-picks mb-5">
+                <p class="fw-bolder text-uppercase mb-2 text-muted">ALL TIME FAVOURITES</p>
+                <h2 class="display-5 fw-bold mb-3">Top Pick listing</h2>
+                <p class="lead width50">We've sorted through our feed to put together a collection of our products
+                    perfect for a
+                    summer outdoors.</p>
+            </div>
+
+            <div class="wrapper_top-pick_items">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="top-pick_img mb-4">
+                            <a href="#">
+                                <img src="assets/img/top-pick/top-pick1.jpeg" alt="top pick" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="top-pick_img mb-4">
+                            <a href="#">
+                                <img src="assets/img/top-pick/top-pick2.jpeg" alt="top pick" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="top-pick_img mb-4">
+                            <a href="#">
+                                <img src="assets/img/top-pick/top-pick3.jpg" alt="top pick" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top-pick section ends here -->
+
+
+    <!-- offer corner section starts here -->
+    <section>
+        <div class="container">
+            <h2 class="text-center"> OFFER CORNER </h2>
+
+            <div class="wrapper_offer">
+                <div class="row justify-content-center">
+                    <div class="col-3 col-md-4 col-lg-2">
+                        <div class="offer_gif">
+                            <img src="assets/img/offer-corner/new-arrival-women.gif" alt="offer gif">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-4 col-lg-2">
+                        <div class="offer_gif">
+                            <img src="assets/img/offer-corner/discount-zone.gif" alt="offer gif">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-4 col-lg-2">
+                        <div class="offer_gif">
+                            <img src="assets/img/offer-corner/new-arrival-men.gif" alt="offer gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- offer corner section ends here -->
+
+
+    <!-- for-her section starts here -->
+    <section class="my-5">
+        <div class="container">
+            <div class="border-bottom border-danger text-center">
+                <h3>FOR HER</h3>
+            </div>
+            <div class="row mt-4" id="product-row">
+                <!-- Dynamically her product data -->
+            </div>
+        </div>
+    </section>
+    <!-- for-her section ends here -->
+
+
+    <!-- for-him section starts here -->
+    <section class="my-5">
+        <div class="container">
+            <div class="border-bottom border-danger text-center">
+                <h3>FOR HIM</h3>
+            </div>
+            <div class="row mt-4" id="product-row1">
+                <!-- Dynamically him product data -->
+            </div>
+        </div>
+    </section>
+    <!-- for-him section ends here -->
+
+
+    <!-- for-kids section starts here -->
+    <section class="my-5">
+        <div class="container">
+            <div class="border-bottom border-danger text-center">
+                <h3>FOR KIDS</h3>
+            </div>
+            <div class="row mt-4" id="product-row2">
+                <!-- Dynamically kids product data -->
+            </div>
+        </div>
+    </section>
+    <!-- for-kids section ends here -->
+
+
+    <!-- spotlight section starts here -->
+    <section>
+        <h2 class="text-center mb-2 pb-2 border-2 border-bottom border-danger"> V2KART SPOTLIGHT </h2>
+        <a href="#" class="mb-3">
+            <img src="assets/img/spotlight-banner.jpg" class="img-fluid w-100" alt="spotlight banner">
+        </a>
+
+        <h2 class="text-center my-2 pb-2 border-2 border-bottom border-danger"> IN THE SPOTLIGHTS </h2>
+
+        <div class="spotlight-banner container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <a href="#">
+                        <img src="assets/img/spotlight1.jpeg" class="img-fluid" alt="spotlight banner">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href="#">
+                        <img src="assets/img/spotlight2.jpeg" class="img-fluid" alt="spotlight banner">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <a href="#">
+                <img src="assets/img/spotlight3.jpeg" class="img-fluid mb-3 w-100" alt="spotlight banner">
+            </a>
+            <a href="#">
+                <img src="assets/img/spotlight4.jpeg" class="img-fluid mb-3 w-100" alt="spotlight banner">
+            </a>
+            <a href="#">
+                <img src="assets/img/spotlight5.jpeg" class="img-fluid mb-5 w-100" alt="spotlight banner">
+            </a>
+        </div>
+    </section>
+    <!-- spotlight section ends here -->
+
+
+    <!-- footer section starts here -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="footer-section">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">Help / Support & FAQ</a></li>
+                            <li><a href="#">Dealership/Franchise Query</a></li>
+                            <li><a href="#">Corporate Website</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">B2B Buyer Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="footer-section">
+                        <h3>Policy & Term</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Returns Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Disclosure Policy</a></li>
+                            <li><a href="#">Cancellation Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-section">
+                        <h3>Customer Care</h3>
+                        <p><i class="fa-solid fa-phone"></i> +91 9311421554</p>
+                        <p>Helpline Is Available Monday - Saturday 08:00 AM To 05:00 PM</p>
+                        <p><i class="fa-brands fa-whatsapp"></i> +91 9311421553</p>
+                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:Support@V2Kart.Com"
+                                class="text-dark">Support@V2Kart.Com</a></p>
+                        <p><i class="fa-solid fa-location-dot"></i> V2 Retail Ltd</p>
+                        <p>Khasra No - 928, Extended Lal Dora Abadi Village,<br>
+                            Kapashera Border, Tehsil Vasant Vihar, New Delhi-110037</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="assets/img/footer/facebook.png" class="img-fluid" alt="Facebook" /></a>
+                        <a href="#"><img src="assets/img/footer/twitter.png" class="img-fluid" alt="Twitter" /></a>
+                        <a href="#"><img src="assets/img/footer/instagram.png" class="img-fluid" alt="Instagram" /></a>
+                        <a href="#"><img src="assets/img/footer/youtube.png" class="img-fluid" alt="YouTube" /></a>
+                    </div>
+
+                    <h4 class="mb-4">SHOP FASTER WITH THE APP</h4>
+                    <div class="app-buttons">
+                        <a href="#"><img src="assets/img/footer/appstore.jpg" class="img-fluid me-3"
+                                alt="App Store" /></a>
+                        <a href="#"><img src="assets/img/footer/playstore.jpg" class="img-fluid"
+                                alt="Google Play" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom fw-bold">
+            © Copyright © 2022– V2 Retail Ltd. All rights reserved
+        </div>
+    </footer>
+    <!-- footer section ends here -->
+
+
+    <!-- script js -->
+    <script src="script.js"></script>
+    <!-- fontawesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+        integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
